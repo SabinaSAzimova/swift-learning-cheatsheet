@@ -175,6 +175,24 @@ true || true && false || false      // true
 ```
 
 ----------------------------------------------------------------
+**16.Comparison Operators**
+
+Comparison operators compare the values of two operands and return a Boolean result:
+
+* less than < 
+* greater than > 
+* less than or equal to <= 
+* greater than or equal to >= 
+* equal to == 
+* not equal to != 
+```swift
+5 > 1       // true 
+6 < 10      // true 
+2 >= 3      // false
+3 <= 5      // true
+"A" == "a"  // false
+"B" != "b"  // true
+```
 
 
 
