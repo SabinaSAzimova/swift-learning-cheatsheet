@@ -1,6 +1,6 @@
 <h1 align="center"> THE BASICS</h1>
 
-1.print()
+**1.print()**
 
 The print() function outputs one or more values to the terminal.
 
@@ -9,14 +9,14 @@ print("Hello World")
 ```
 
 ----------------------------------------------------------------
-2.Single-line comment 
+**2.Single-line comment**
 
 Single-line comments are created using two consecutive forward slashes. The compiler ignores any text after // on the same line.
 ```swift
 // This is a single line comment.
 ```
 ----------------------------------------------------------------
-3.Multiline Comments
+**3.Multiline Comments**
 
 Multiline comments are created using /* to begin the comment, and */  to end the comment. The compiler ignores any text in between.
 ```swift
@@ -26,7 +26,7 @@ multiline comment
 */
 ```
 ----------------------------------------------------------------
-4.Program structure
+**4.Program structure**
 
 The program runs line by line, from top to bottom:
 ```swift
@@ -38,21 +38,21 @@ Line 1 prints Hola
 Line 2 prints Buenos días
 
 ----------------------------------------------------------------
-5.Variables 
+**5.Variables**
 
 A variable refers to a storage location in the computer’s memory that one can set aside to save, retrieve, and manipulate data.
 ```swift
 var score = 0
 ```
 ----------------------------------------------------------------
-6.Constants
+**6.Constants**
 
 Constants refer to fixed values that a program may not alter during its execution. One can be declared by using the let keyword.
 ```swift
 let pi = 3.14
 ```
 ----------------------------------------------------------------
-7.Arithmetic operators
+**7.Arithmetic operators**
 
 Swift supports arithmetic operators for:
 
@@ -70,7 +70,7 @@ x = 4 / 2  // x is now 2
 x = 4 % 2  // x is now 0
 ```
 ----------------------------------------------------------------
-8.Types
+**8.Types**
 
 Type annotation can be used during declaration.
 
@@ -87,7 +87,7 @@ var message: String = "good night"
 var lateToWork: Bool = true
 ```
 ----------------------------------------------------------------
-9.String Interpolation
+**9.String Interpolation**
 
 String interpolation can be used to construct a String from a mix of variables, constants, and others by including their values inside a string literal.
 ```swift
@@ -97,7 +97,7 @@ print("I have \(apples) apples!")
 Prints: I have 6 apples!
 
 ----------------------------------------------------------------
-10.Compound Assignment Operators
+**10.Compound Assignment Operators**
 
 Compound assignment operators provide a shorthand method for updating the value of a variable:
 
