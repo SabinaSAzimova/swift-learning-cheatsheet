@@ -9,7 +9,7 @@ print("Hello World")
 ```
 
 ----------------------------------------------------------------
-**2.Single-line comment**
+**2.Single-line Comment**
 
 Single-line comments are created using two consecutive forward slashes. The compiler ignores any text after // on the same line.
 ```swift
@@ -26,7 +26,7 @@ multiline comment
 */
 ```
 ----------------------------------------------------------------
-**4.Program structure**
+**4.Program Structure**
 
 The program runs line by line, from top to bottom:
 ```swift
@@ -52,7 +52,7 @@ Constants refer to fixed values that a program may not alter during its executio
 let pi = 3.14
 ```
 ----------------------------------------------------------------
-**7.Arithmetic operators**
+**7.Arithmetic Operators**
 
 Swift supports arithmetic operators for:
 
@@ -119,10 +119,62 @@ print("There are \(numberOfDogs) dalmations!")
 Prints: There are 101 dalmations!
 
 ----------------------------------------------------------------
+**11.Logical Operator !**
 
+The logical NOT operator, denoted by a !, is a prefix operator that negates the value on which it is prepended. It returns false when the original value is true and returns true when the original value is false.
+```swift
+!true          // false
+!false         // true
+```
+ ----------------------------------------------------------------
+**12.Logical Operator &&**
 
+The logical AND operator, denoted by an &&, evaluates two operands and returns a Boolean result. It returns true when both operands are true and returns false when at least one operand is false.
+```swift
+true && true    // true
+true && false   // false 
+false && true   // false 
+false && false  // false
+```
+----------------------------------------------------------------
+**13.Logical Operator ||**
 
+The logical OR operator, denoted by ||, evaluates two operands and returns a Boolean result. It returns false when both operands are false and returns true when at least one operand is true.
+```swift
+true || true    // true
+true || false   // true
+false || true   // true 
+false || false  // false
+```
+----------------------------------------------------------------
+ 
+**14.Combining Logical Operators**
 
+Logical operators can be chained in order to create more complex logical expressions. When logical operators are chained, it’s important to note that the && operator has a higher precedence over the || operator and will get evaluated first.
+```swift
+!false && true || false  // true
+/* 
+!false && true evaluates first and returns true. Then, the expression, true || false evaluates and returns the final result, true. 
+*/ 
+ 
+false || true && false   // false
+/* 
+true && false evaluates first which returns false. Then, the expression, false || false evaluates and returns the final result, false. 
+*/ 
+```
+----------------------------------------------------------------
+**15.Controlling Order of Execution**
+
+Within a Swift logical expression, parentheses, (), can be used to organize and control the flow of operations. The usage of parentheses within a logical expression overrides operator precedence rules and improves code readability.
+```swift
+// Without parentheses:
+true || true && false || false      // true 
+
+// With parentheses:
+(true || true) && (false || false)  // false 
+```
+
+----------------------------------------------------------------
 
 
 
